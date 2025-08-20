@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spreadsheet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="file-controls">
+      <div class="top-row-controls">
+        <button id="home-btn">🏠</button>
+        <input type="text" id="filename-input" placeholder="파일명을 입력하세요." >
+        <button id="save-btn">Save Data</button>
+      </div>
+
+      <div class="bottom-row-controls">
+        <button id="export-btn">Export CSV</button>
+        <button id="import-btn">Import CSV</button>
+        <button id="load-btn">Load Data</button>
+        <button id="list-btn">List Data</button>
+        <button id="delete-btn">Delete Data</button>
+      </div>
+      
+      <input type="file" id="file-input" accept=".csv" />
+    </div>
+
+    <div class="status-bar">
+      <div>Cell: <span id="cell-status"></span></div>
+    </div>
+
+    <div id="spreadsheet-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

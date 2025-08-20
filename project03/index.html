@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>GitHub Finder</h1>
+    </div>
+
+    <div class="container">
+        <div class="search-section">
+            <h2>Search GitHub Users</h2>
+            <p>Enter a username to fetch a user profile and repos</p>
+            
+            <form class="search-form" id="searchForm">
+                <input type="text" class="search-input" id="searchInput" placeholder="Enter GitHub username..." required>
+                <button type="submit" class="search-btn" id="searchBtn">Search</button>
+            </form>
+
+        </div>
+        
+        <div class="user-profile" id="userProfile">
+            <div class="profile-header">
+                <img src="" alt="Profile Avatar" class="profile-avatar" id="profileAvatar">
+                <div class="profile-info">
+                    <div class="profile-name" id="profileName"></div>
+                    <div class="profile-username" id="profileUsername"></div>
+                    <div class="profile-bio" id="profileBio"></div>
+                    <div class="profile-stats">
+                        <span class="stat-badge stat-repos" id="statRepos">Public Repos: 0</span>
+                        <span class="stat-badge stat-gists" id="statGists">Public Gists: 0</span>
+                        <span class="stat-badge stat-followers" id="statFollowers">Followers: 0</span>
+                        <span class="stat-badge stat-following" id="statFollowing">Following: 0</span>
+                    </div>
+                    <a href="" target="_blank" class="view-profile-btn" id="viewProfileBtn">View Profile</a>
+                </div>
+            </div>
+            <div class="profile-details" id="profileDetails"></div>
+        </div>
+        
+        <div class="top-repos-section" id="topReposSection">
+            <h3>🏆 Top Repositories</h3>
+            <div class="top-repos-grid" id="topReposGrid"></div>
+        </div>
+
+        <div class="repos-section" id="reposSection">
+            <h3>Latest Repos</h3>
+            <div id="reposList"></div>
+        </div>
+        <!-- repo list에 각 repo의 최신 커밋 추가하기 -->
+        
+        <div class="language-stats-section" id="languageStatsSection">
+            <h3>Language Usage Statistics</h3>
+            <div class="language-stats" id="languageStats"></div>
+        </div>
+
+        <div class="contributions-section" id="contributionsSection">
+            <h3>Contribution Activity</h3>
+            <div class="contributions-container">
+                <div class="contributions-wrapper" id="contributionsGrid">
+                    <div class="month-labels" id="monthLabels"></div>
+                    <div class="weekday-labels" id="weekdayLabels"></div>
+                    <div class="contribution-days" id="contributionDays"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spinner" id="spinner"></div>
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+
+    
+    <div class="footer">
+        <p>GitHub Finder &reg;</p>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

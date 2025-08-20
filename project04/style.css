@@ -1,0 +1,128 @@
+#file-controls {
+    margin-bottom: 10px;
+}
+
+.top-row-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.bottom-row-controls {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 5px; 
+}
+
+#home-btn,
+#export-btn, 
+#import-btn, 
+#save-btn, 
+#load-btn,
+#list-btn,
+#delete-btn {
+    background: #CCC;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+ #home-btn {
+    background: #6C757D;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+#import-btn {
+    background: #0066CC;
+}
+
+#save-btn {
+    background: #FF6B00;
+}
+
+#load-btn {
+    background: #8B00FF;
+}
+
+#list-btn {
+    background: #28A745;
+}
+
+#delete-btn {
+    background: #DC3545;
+}
+
+#file-input {
+    display: none;
+}
+
+#filename-input {
+    padding: 8px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cell-row {
+    display: flex;
+}
+
+.cell {
+    width: 80px;
+    border: 1px solid lightgray;
+    height: 40px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.cell.header {
+    text-align: center;
+    background: #ddd;
+    font-weight: bold;
+}
+
+.cell.header.active {
+    background: lightblue;
+    color: white;
+}
+
+.cell.selected {
+    border: 2px solid #4285f4;
+    background-color: #e3f2fd;
+}
+
+.cell:focus {
+    border: 2px solid #4285f4;
+    background-color: #fff;
+}
+
+#cell-status {
+    font-weight: bold;
+    color: #333;
+}
+
+.status-bar {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.cell.selected {
+    background-color: #e3f2fd !important;
+    border: 2px solid #2196f3 !important;
+}
+
+.header.active {
+    background-color: #bbdefb !important;
+    font-weight: bold;
+}
+
+.cell {
+    user-select: none; /* 드래그 시 텍스트 선택 방지 */
+}

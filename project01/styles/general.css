@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Netflix Sans', 'Roboto', sans-serif; /* Netflix Sans가 적용되지 않을 경우 Roboto fallback */
+    /* font-family: 'Helvetica Neue', Arial, sans-serif; */
+    background-color: #141414; /* 넷플릭스 배경색과 유사하게 설정 */
+    color: white;
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+}
